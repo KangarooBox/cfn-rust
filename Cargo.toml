@@ -1,0 +1,20 @@
+[package]
+name = "cfn-rust"
+version = "0.1.0"
+authors = ["Richard Hurt <richard.hurt@locushealth.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+env_logger = "^0.8"
+# handlebars = "^3.5"
+handlebars = { git = "https://github.com/sunng87/handlebars-rust", branch = "master" }
+serde_derive = "^1.0"
+serde_json = "^1.0"
+log = "^0.4"
+
+[dev-dependencies]
+tempfile = "3.1.0"
+pretty_assertions = "0.6.1"
+
